@@ -1,0 +1,15 @@
+# charcter-driver
+simple charcter driver code
+steps
+1.insmod driver_file.ko
+2.mknod /dev/device_file c 42 0 // 42 - major number ,0-minor number
+ or
+mknod -m 666 /dev/device_file c 42 0 // 42 - major number ,0-minor number,666 - read write permissions for all
+3.execute the application i.e read or write
+
+Note : 
+1.mknode /dev/device_file c 42 0
+2.fd = open("/dev/device_file",O_RDONLY);
+3.fd = open("/dev/device_file",O_WRONLY);
+   
+In 1,2,3 "device_file" should be same
