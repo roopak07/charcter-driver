@@ -1,0 +1,22 @@
+to implement charcter driver code steps 
+1.insmod driver_file.ko 
+2.mknod /dev/device_file c 42 0 // 42 - major number ,0-minor number 
+3.execute the application i.e read or write
+
+>To see info of the driver code
+  modinfo file_name.ko
+  
+>Default path for drivers is 
+  /lib/modules/kernel version here/kernel/drivers
+
+>if we want to see modules loaded into kernel space of RAM then use below command
+  lsmod (or) /proc/modules  (or) cat /proc/modules
+  
+>to see major number and minor number go to /dev directry and use this command
+  ls -l
+ 
+>if we want to symbol table then 
+  /proc/kallsynes 
+ 
+>Major number associated with driver 
+  /proc/devices
