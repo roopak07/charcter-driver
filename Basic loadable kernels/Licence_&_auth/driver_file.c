@@ -17,5 +17,5 @@ module_init(myinit);
 module_exit(myexit);
 MODULE_AUTHOR("Teckbuz");
 MODULE_LICENSE("GPL");
-MODULE_DESCRIPTION("Sample Module");
+MODULE_DESCRIPTION("Sample Kernel Module");
 MODULE_SUPPORTED_DEVICE("Linux");
