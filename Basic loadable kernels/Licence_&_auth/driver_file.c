@@ -15,7 +15,7 @@ printk(KERN_ALERT"Exit function");
 
 module_init(myinit);
 module_exit(myexit);
-MODULE_AUTHOR("Roopak");
+MODULE_AUTHOR("Teckbuz");
 MODULE_LICENSE("GPL");
-MODULE_DESCRIPTION("Sample Driver");
+MODULE_DESCRIPTION("Sample Module");
 MODULE_SUPPORTED_DEVICE("Linux");
