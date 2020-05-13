@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: GPL-2.0-only
+#
+# my_Charecter driver configuration
+#
+menuconfig MY_CHARDEV
+	tristate "my chardriver support"
+	default y
+	help
+	  If you want my_charecter driver support, you should say Y here and also to the
+	  specific driver for your bus adapter(s) below.
+
+	  This my_charecter driver can also be built as a module.  If so, the module
+	  will be called my_chardev.
+
