@@ -40,7 +40,7 @@ int myinit(void)
 int p,q;
 dev_t devno;
 devno = MKDEV(minorno,majorno);
-p=register_chrdev_region(devno,10,"mychardev");
+p=register_chrdev_region(devno,10,"mychardev"); // mychardev can be seen if we search for inserted modules using the command "lsmod"
 if(p < 0)
  printk("register chardev region error \n");
 else
