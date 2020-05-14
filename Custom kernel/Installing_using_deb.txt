@@ -1,0 +1,25 @@
+Install required packages
+
+Open the terminal application. Type the following apt-get command to install the required packages for building the Linux kernel:
+$ sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc
+
+Finally, install the kernel-package package too:
+$ sudo apt-get install kernel-package
+
+make menuconfig
+
+Now, you can compile the kernel, run:
+$ fakeroot make-kpkg --initrd --revision=1.0.NAS kernel_image kernel_headers
+
+Installing a custom kernel
+
+Type the following dpkg command to install a custom kernel on your system:
+$ cd ..
+$ sudo dpkg -i linux-headers-4.9.11_1.0.NAS_amd64.deb
+$ sudo dpkg -i linux-image-4.9.11_1.0.NAS_amd64.deb
+
+Reboot the box/server/laptop
+
+Type the following command:
+$ sudo reboot
+
