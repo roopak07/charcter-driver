@@ -1,0 +1,16 @@
+Change the UTS_SYSNAME definition, under
+
+    linux-x.xx.xx/include/linux/uts.h
+
+and compile it, then uname will return whatever it was set to.
+
+#define UTS_SYSNAME "Linux"
+
+example : 
+
+#define UTS_SYSNAME "Roopak"
+
+then comple kernel and check version  using below comands
+1.uname
+2.uname -mrs
+
