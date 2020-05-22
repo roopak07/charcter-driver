@@ -1,3 +1,6 @@
+# Kernel log
+tail -l /var/log/syslog // for kernel logs
+
 # charcter-driver
 simple charcter driver code
 steps
