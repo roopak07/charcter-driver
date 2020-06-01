@@ -1,0 +1,10 @@
+find out all installed kernel version:
+$ dpkg -l | grep linux-image | awk '{print$2}'
+Output:
+ii  kernel-image-2.4.27-2-386   2.4.27-10sarge1             Linux kernel image for version 2.4.27 on 386
+ii  kernel-image-2.6.8-2-686    2.6.8-16sarge1              Linux kernel image for version 2.6.8 on PPro
+
+Now remove kernel-image-2.4.27-2-386 with apt-get command itself:
+sudo apt remove --purge linux-image-4.4.0-21-generic
+$ sudo update-grub2
+$ sudo reboot
