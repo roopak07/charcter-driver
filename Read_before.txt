@@ -1,0 +1,1 @@
+1.File name of .ko and file name in /dev need to same. or else we get error if we try to use any read or write application on the driver code
